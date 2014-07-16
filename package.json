@@ -1,0 +1,22 @@
+{
+  "name": "stevefar.com",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Steve Farthing",
+  "license": "MIT",
+  "dependencies": {
+    "vinyl-source-stream": "^0.1.1",
+    "gulp-jade": "^0.6.1",
+    "gulp": "^3.8.5",
+    "browserify": "^4.2.0",
+    "gulp-less": "^1.3.1",
+    "browserify-shim": "^3.6.0"
+  },
+  "browserify": {
+    "transform": [ "browserify-shim" ]
+  }
+}

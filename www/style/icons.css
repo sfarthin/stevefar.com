@@ -1,0 +1,125 @@
+/*!
+ *
+ *  Project:  GLYPHICONS
+ *  Author:   Jan Kovarik - www.glyphicons.com
+ *  Twitter:  @jankovarik
+ *
+ */
+@font-face {
+  font-family: 'Glyphicons Social Regular';
+  src: url('/glyphicons_pro/glyphicons_social/web/html_css/fonts/glyphicons-social-regular.eot');
+  src: url('/glyphicons_pro/glyphicons_social/web/html_css/fonts/glyphicons-social-regular.eot?#iefix') format('embedded-opentype'), url('/glyphicons_pro/glyphicons_social/web/html_css/fonts/glyphicons-social-regular.woff') format('woff'), url('/glyphicons_pro/glyphicons_social/web/html_css/fonts/glyphicons-social-regular.ttf') format('truetype'), url('/glyphicons_pro/glyphicons_social/web/html_css/fonts/glyphicons-social-regular.svg#glyphicons_socialregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.si {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  color: #1d1d1b;
+  text-decoration: none;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  /*	&.pinterest{ &:before{ content:"\E001";} }
+	&.dropbox{ &:before{ content:"\E002";} }*/
+  /*&.jolicloud{ &:before{ content:"\E004";} }
+	&.yahoo{ &:before{ content:"\E005";} }
+	&.blogger{ &:before{ content:"\E006";} }
+	&.picasa{ &:before{ content:"\E007";} }
+	&.amazon{ &:before{ content:"\E008";} }*/
+  /*	&.wordpress{ &:before{ content:"\E010";} }
+	&.instapaper{ &:before{ content:"\E011";} }
+	&.evernote{ &:before{ content:"\E012";} }
+	&.xing{ &:before{ content:"\E013";} }
+	&.zootool{ &:before{ content:"\E014";} }
+	&.dribbble{ &:before{ content:"\E015";} }
+	&.deviantart{ &:before{ content:"\E016";} }
+	&.read_it_later{ &:before{ content:"\E017";} }
+*/
+  /*	&.forrst{ &:before{ content:"\E019";} }
+	&.pinboard{ &:before{ content:"\E020";} }
+	&.behance{ &:before{ content:"\E021";} }
+*/
+  /*	&.skitch{ &:before{ content:"\E024";} }
+	&.foursquare{ &:before{ content:"\E025";} }
+	&.quora{ &:before{ content:"\E026";} }
+	&.badoo{ &:before{ content:"\E027";} }
+	&.spotify{ &:before{ content:"\E028";} }
+	&.stumbleupon{ &:before{ content:"\E029";} }
+	&.readability{ &:before{ content:"\E030";} }
+*/
+  /*	&.posterous_spaces{ &:before{ content:"\E034";} }
+*/
+  /*	&.flickr{ &:before{ content:"\E036";} }
+	&.last_fm{ &:before{ content:"\E037";} }
+	&.rss{ &:before{ content:"\E038";} }
+*/
+  /*	&.vine{ &:before{ content:"\E041";} }
+	&.myspace{ &:before{ content:"\E042";} }
+	&.goodreads{ &:before{ content:"\E043";} }
+	&.apple{ &:before{ content:"\F8FF";} }
+	&.windows{ &:before{ content:"\E045";} }
+	&.yelp{ &:before{ content:"\E046";} }
+	&.playstation{ &:before{ content:"\E047";} }
+	&.xbox{ &:before{ content:"\E048";} }
+	&.android{ &:before{ content:"\E049";} }
+	&.ios{ &:before{ content:"\E050";} }
+*/
+}
+.si:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  margin: 0 5px 0 0;
+  font: 24px/1em 'Glyphicons Social Regular';
+  font-style: normal;
+  font-weight: normal;
+  /*		color: #1d1d1b;*/
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+.si.google_plus:before {
+  content: "\E003";
+}
+.si.tumblr:before {
+  content: "\E009";
+}
+.si.linked_in:before {
+  content: "\E018";
+}
+.si.github:before {
+  content: "\E022";
+}
+.si.youtube:before {
+  content: "\E023";
+}
+.si.facebook:before {
+  content: "\E031";
+}
+.si.twitter:before {
+  content: "\E032";
+}
+.si.instagram:before {
+  content: "\E033";
+}
+.si.vimeo:before {
+  content: "\E035";
+}
+.si.skype:before {
+  content: "\E039";
+}
+.si.e-mail:before {
+  content: "\E040";
+}
+.si {
+  overflow: hidden;
+  padding-left: 36px;
+}
+.si:before {
+  font-size: 36px;
+}
