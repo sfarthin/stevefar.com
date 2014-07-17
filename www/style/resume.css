@@ -3235,15 +3235,24 @@ input[type="button"].btn-block {
   }
   body {
     background-color: white;
-    width: 7.5in;
-    height: 10.5in;
     margin: auto;
-    padding: 0.5in;
     border-radius: 4px;
     -moz-box-shadow: 5px 5px 5px 0px #777777;
     -webkit-box-shadow: 5px 5px 5px 0px #777777;
     box-shadow: 5px 5px 5px 0px #777777;
   }
+}
+@media print and (color) {
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* presentation rules for the page on color printers */
+}
+body {
+  width: 8.5in;
+  height: 11in;
+  padding: 0.5in;
 }
 header {
   display: -webkit-box;
@@ -3288,6 +3297,10 @@ header {
 .contact a {
   display: block;
   margin: 10px 3px;
+}
+.contact a:hover {
+  text-decoration: none;
+  color: black;
 }
 .contact .website,
 .contact .phone {
