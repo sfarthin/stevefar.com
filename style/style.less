@@ -206,6 +206,11 @@ ul.linkList {
 
 .artistPane, .developerPane {
 	padding: 30px;
+	
+	ul {
+		margin-top: 30px;
+		font-size: 18px;
+	}
 }
 
 .artistPane, footer {
@@ -270,7 +275,7 @@ h2 {
 	margin-left: 20px;
 }
 
-.examples {
+.examples, .experience, .projects {
 	p {
 		margin: 10px 0 30px;
 	}
@@ -280,15 +285,26 @@ h2 {
 	h3 {
 		font-size: 23px;
 		margin-bottom: 2px;
+		
+		border-bottom: 1px solid #777;
+		padding-bottom: 5px;
+		
+		a:hover {
+			text-decoration: none;
+		}
 	}
 	
 	h6 {
 		margin-top: 5px;
 		font-size: 14px;
 	}
+	
+	blockquote {
+		margin-left: 20px;
+		margin-bottom: 50px;
+	}
 
 }
-
 
 ::-moz-selection {
   background: @brand-primary;
@@ -301,6 +317,26 @@ h2 {
   text-shadow: none;
 }
 
+@media screen and(min-width: 1024px) {
+
+	.projects-and-experience {
+	
+		.projects, .experience {
+			margin-left: 0px;
+		}
+	
+		.display(flex);
+	
+		> div {
+			.flex(1);
+		}
+	
+		div:first-child {
+			margin-right:150px;
+		}
+	}
+
+}
 
 // Lets get responsive while shrinking.
 
@@ -308,7 +344,7 @@ h2 {
 	
 	.stack {
 		.column-count(2);
-	}	
+	}
 
 }
 
@@ -319,6 +355,15 @@ h2 {
 			float: none;
 			margin: 20px auto 0px;
 		}
+	}
+	
+	.examples, .experience, .projects {
+		margin-left: 0px;
+	}
+	
+	.artistPane, .developerPane {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 

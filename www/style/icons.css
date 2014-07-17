@@ -42,9 +42,8 @@
 	&.behance{ &:before{ content:"\E021";} }
 */
   /*	&.skitch{ &:before{ content:"\E024";} }
-	&.foursquare{ &:before{ content:"\E025";} }
-	&.quora{ &:before{ content:"\E026";} }
-	&.badoo{ &:before{ content:"\E027";} }
+	&.foursquare{ &:before{ content:"\E025";} } */
+  /* 	&.badoo{ &:before{ content:"\E027";} }
 	&.spotify{ &:before{ content:"\E028";} }
 	&.stumbleupon{ &:before{ content:"\E029";} }
 	&.readability{ &:before{ content:"\E030";} }
@@ -97,6 +96,9 @@
 }
 .si.youtube:before {
   content: "\E023";
+}
+.si.quora:before {
+  content: "\E026";
 }
 .si.facebook:before {
   content: "\E031";

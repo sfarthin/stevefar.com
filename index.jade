@@ -4,162 +4,218 @@ html(lang="en")
 		meta(name="viewport",content="width=device-width; initial-scale=1.0")
 		title Steve Farthing
 		link(rel="stylesheet",type="text/css",href="style/style.css")
-body(onload="navigator.userAgent.match(/(iPad|iPhone|iPod)/g) && document.querySelector('video').setAttribute('controls','controls')")
-	header
-		.logoWrapper
-			.wrap
-				.cube
-					.front
-						//.edge
-						img(src="/img/logo.svg")
-					.back
-						.edge
-						img(src="/img/art.svg")
-						//-div Artist / Musician
-					.top
-						//- .edge
-						img(src="/img/logo.svg")
-					.bottom 
-						.edge
-						img(src="/img/web.svg")
-						//- div WEB DEVELOPER
-					.left
-						.edge
-					.right
-						.edge
-		.icons
-			a.si.github(href="https://github.com/sfarthin",target="_blank")
-			a.si.facebook(href="https://www.facebook.com/stevefar",target="_blank")
-			a.si.twitter(href="https://twitter.com/stevefarthing",target="_blank")
-			a.si.linked_in(href="http://www.linkedin.com/in/stevefarthing",target="_blank")
-			a.si.e-mail(href="mailto:me@stevefar.com")
-			a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
+	body(onload="navigator.userAgent.match(/(iPad|iPhone|iPod)/g) && document.querySelector('video').setAttribute('controls','controls')")
+		header
+			.logoWrapper
+				.wrap
+					.cube
+						.front
+							//.edge
+							img(src="/img/logo.svg")
+						.back
+							.edge
+							img(src="/img/art.svg")
+							//-div Artist / Musician
+						.top
+							//- .edge
+							img(src="/img/logo.svg")
+						.bottom 
+							.edge
+							img(src="/img/web.svg")
+							//- div WEB DEVELOPER
+						.left
+							.edge
+						.right
+							.edge
+			.icons
+				a.si.github(href="https://github.com/sfarthin",target="_blank")
+				a.si.facebook(href="https://www.facebook.com/stevefar",target="_blank")
+				a.si.twitter(href="https://twitter.com/stevefarthing",target="_blank")
+				a.si.linked_in(href="http://www.linkedin.com/in/stevefarthing",target="_blank")
+				a.si.e-mail(href="mailto:me@stevefar.com")
+				a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
 
-	//- p.intro I am a web developer, artist and musician living in central Connecticut. I have developed each level involved in building a web application, from the cutting edge CSS and javascript on the frontend to deploying and scaling backend servers. As a visual artist I have experience with traditional art such as printmaking, sumi-e painting and portraiture. I am a folk singer, songwriter and have played a number of different instruments live and in the studio.
-	p.intro I am a <a href="/#web-developer">web developer</a>, <a href="/#artist">artist and musician</a> living in central Connecticut. I have developed each level involved in building a web application, from the cutting edge CSS and javascript on the frontend to deploying and scaling backend servers. As a visual artist I have experience with traditional art such as printmaking, sumi-e painting and portraiture. I am a folk singer, songwriter and have played a number of different instruments live and in the studio.
+		p.intro I am a <a href="/#web-developer">web developer</a>, <a href="/#artist">artist and musician</a> living in central Connecticut. I have developed each level involved in building a web application, from the cutting edge CSS and javascript on the frontend to deploying and scaling backend servers. As a visual artist I have experience with traditional art such as printmaking, sumi-e painting and portraiture. I am a folk singer, songwriter and have played a number of different instruments live and in the studio.
 
-	.down-arrow.bounce.animated
-		a.glyphicon.glyphicon-chevron-down(href="/#artist")
+		.down-arrow.bounce.animated
+			a.glyphicon.glyphicon-chevron-down(href="/#artist")
 
-a(name="artist")
-.artistPane(name="artist")
-	h1 Artist / Musician
-
-
-	video(width="640",height="352",poster="http://storage.googleapis.com/stevefar/poster.jpg",autoplay,loop)
-		source(src="http://storage.googleapis.com/stevefar/webclip.mp4")
-		//- <source src="http://www.the exact location of your WEBM video.webm" />
-		//- <source src="http://www.the exact location of your OGG video.ogg" />
-
-	p As a visual artist, I have experience with traditional woodblock and monotype printmaking. I have applied this understanding of composition and tools such as masking or overlayering elements to both my physical and digital work. I am also comfortable with Adobe Photoshop for manipulating photos as well as Adobe illustrator for creating vector art.
-
-	p I am the bassiest for jCherry and Strawberries, a blues and rock group. The band <a href="http://www.middletownpress.com/general-news/20140711/j-cherry-and-strawberries-concert-to-debut-album-recorded-in-middletown" target="_blank">released an album</a> July of 2014 thanks to a <a href="https://www.kickstarter.com/projects/373251923/in-the-belly-of-the-beast" target="_blank">successful kickstarter campaign</a>. In addition to playing bass, I sing and play guitar for the "<a href="https://www.youtube.com/watch?v=dmYbRh_vqrc" target="_blank">Dogs on Prozac</a>" track, an original song of mine.
-
-	ul.linkList
-		li
-			a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
-				span See more art on my Tumblr blog
-		li
-			a.si.youtube(href="http://youtube.com/sfarthing",target="_blank")
-				span Watch my performances on YouTube
-		//- li
-		//- 	a.si.vimeo(href="https://vimeo.com/stevefar",target="_blank")
-		//- 		span See my instructional videos for home recording on Vimeo
-
-	.down-arrow.bounce.animated
-		a.glyphicon.glyphicon-chevron-down(href="/#web-developer")
-
-a(name="web-developer")
-.developerPane(name="developer")
-	h1 Web Developer
-	p I am a fullstack web developer with an emphasis on building web applications utilizing cutting edge CSS and JavaScript for both mobile and desktop. I utilize a test driven approach to build stable javascript modules optimized for the browser, but also package modules for use on the server with Node.js. As a contributor to open source projects and releasing some of my own work with an open source license, I work to move the web platform forward. In my spare time I am a musician as well as a <a href="">visual artist</a>.
-
-	p As a strong adovate of writing code that testable, resuable and open, I work to move the web platform forward.
-	p I am a fullstack web developer with an emphasis on building web applications utilizing cutting edge CSS and JavaScript for both mobile and desktop. I utilize a test driven approach to build stable javascript modules optimized for the browser, but also package modules for use on the server with Node.js. As a contributor to open source projects and releasing some of my own work with an open source license, I work to move the web platform forward. In my spare time I am a musician as well as a <a href="">visual artist</a>.
-
-	//- http://www.nsf.gov/awardsearch/showAward?AWD_ID=0843855&HistoricalAwards=false
-
-	h2 Code Examples
-	.examples
-		div
-			h3 SteveFar.com
-			p This code example contains all the code used on this website (<a href="//stevefar.com">SteveFar.com</a>). It is optimized with minified assests, vector images (SVG), and completely javascriptless. It demonstrates an understanding of responsive design, use of visual frameworks such (this page uses <a href="http://getbootstrap.com/" target="_blank">bootstrap</a>), advanced CSS knowledge (such as animation and flexbox), use of the LESS and Jade, LESS mixins to accomdate browser prefixes and quirks, and the <a href="http://gulpjs.com/">Gulp</a> task manager (A less verbose alternative to Grunt).
-		//- div
-		//- 	h3 Image Manipulation Library
-		//- 	h6 $ bower install <strong>image-manipulation</strong>
-		//- 	p This library revels methods that allow image importing from input elements, manipulation, and xhr uploads. The example has uploads directly to Google Cloud Storage.
-		//- 	//- Angular There are unit tests with karma, AMD with Requirejs and rjs. and e2e selenium tests with protractor.
-		//- 	//- <strong> Show Selenium test video and photo wall of everyone who used it</strong>
-		div
-			h3 <a href="https://github.com/sfarthin/node-process-manager" target="_blank">Google Cloud Storage Signed URLs for Node.js</a>
-			h6 $ npm install <strong>gcs-signed-urls</strong>
-			p This npm library revels knowledge of cryptography, integration with third party apis such as Google without SDKs (Google API does not support Node.js), and use of third party services to alleviate the need for server maintenance. 
-		div
-			h3 <a href="https://github.com/sfarthin/node-process-manager" target="_blank">Node.js Process Manager</a>
-			h6 $ npm install <strong>node-process-manager</strong>
-			p This code is a NPM module that manages node processes. It enforces a node process respawn if it quits unexpectably, it shuts down gracefully to prevent any requests from erroring out, and monitors stdout on a set of node processes. This module was used in production for some time and was used to produce a server restart with zero downtime and not breaking current connections (such as file uploads). my knowledge of unit tests (with mocha and chai libraries), and publishing a library to NPM. 
-			//- (<strong>EXAMPLE WITH ZERO DOWNTIME</strong>).
-		//- div
-		//- 	h3 Docker build ngninx from source (docker module)
-		//- 	p <strong>TODO</strong> and publishing to Docker.
-		//- div
-		//- 	h3 uGravity
-		//- 	p The
-
-	//- h2 My Stack
-	//- p(style="margin-left:20px;margin-bottom:10px;margin-top:10px;") Although I am fully experienced with the <a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_blank">LAMP</a> stack, I have mastered and embraced the <a href="http://mean.io/" target="_blank">MEAN</a> stack to take advantage of the modern web.
-	//- .stack
-	//- 	div
-	//- 		h3 Browser
-	//- 		p I know how to use pure javascript for DOM manipulation, nontrivial regular expressions and XHR. In addition, I have experience managing browser quirks and support for CSS and Javascript. I keep a watchful eye on the standerds in ECMAscript 6, most notably the "modules" feature.
-	//-
-	//- 	div
-	//- 		h3 Style and Design
-	//- 		p Responsive design. Mobile first. Bootstrap, foundation. iconography.
-	//-
-	//- 	div
-	//- 		h3 Browser features
-	//- 		p Experience in HTML5 canvas. CSS3 use of mixins to manage browser prefixes. Combination of CSS3 transformations and transitions to create reactive interfaces. Filereader and parsing EXIF from images
-	//-
-	//- 	div
-	//- 		h3 Clientside libraries
-	//- 		p Use of Angular (which I have <a href="http://gist.io/8871692" target="_blank">written about</a>), Underscore, Bower managing client side dependencies, Browserify, Require (for packaged in optimized), Backbone, various CSS precursors and Rapheal javascript libraries
-	//-
-	//- 	div
-	//- 		h3 Serverside Scripting
-	//- 		p Nodejs, express.js, socket.io. Stateless node.js api for use of clustering and load balancing. Also experience with PHP with MVC frameworks such as Codeignitor.
-	//-
-	//- 	div
-	//- 		h3 Services and APIs
-	//- 		p Experience integrations with REST and realtime APIs such Coursera OAuth, Zendesk, Mandrill, Google Cloud storage using signed URLs for clients to upload directly to Google, and Twitter streaming api. Heroku Imagemagick.
-	//-
-	//- 	div
-	//- 		h3 Webserver
-	//- 		p Experience with both Apache and Nginx for setting up features like proxies, reverse proxies, SSL, and wildcard DNS. Knowledge of server optimizations such as SPDY, sendfile, and the use cases of browser, server, and proxy cache.
-	//-
-	//- 	div
-	//- 		h3 Database
-	//- 		p Thorough understanding of relational databases such as Mysql along with experience with NoSql databases such as Couchdb/Mongo and understanding of mapReduce views. Thorough experience with proprietary services such as Firebase and integrations into Angular.js
-	//-
-	//- 	div
-	//- 		h3 Operating System
-	//- 		p Comfortable from the linux command-line with functions such as installing libraries from source, shell scripting, crontab backups, and SSH keys.
-	//-
-	//- 	div
-	//- 		h3 System
-	//- 		p Experience running remote Selenium tests in virtual machines for cross platform testing. Experienced in “Dockerizing” apps with Dockerfiles and Docker images for deployment anywhere. Creating load balancers with nginx or haproxy and grabbing benchmarks (siege).
+	a(name="artist")
+	.artistPane(name="artist")
+		h1 Artist / Musician
 
 
-	//- http://www.idsnews.com/article/2013/08/cultureu-website-connects-fine-arts-students-to-jobs-opportunites?id=93774
-	ul.linkList
-		li
-			a.si.github(href="https://github.com/sfarthin",target="_blank")
-				span See more examples on Github
-		li
-			a.si.youtube(href="http://stackoverflow.com/users/2509509/steve-farthing?tab=answers",target="_blank")
-				span See problems solved on StackOverflow
+		video(width="640",height="352",poster="http://storage.googleapis.com/stevefar/poster.jpg",autoplay,loop)
+			source(src="http://storage.googleapis.com/stevefar/webclip.mp4")
+			//- <source src="http://www.the exact location of your WEBM video.webm" />
+			//- <source src="http://www.the exact location of your OGG video.ogg" />
 
-footer
-	a(href="/")
-		| Return to top
-		.glyphicon.glyphicon-arrow-up
+		p As a visual artist, I have experience with traditional woodblock and monotype printmaking. I have applied this understanding of composition and tools such as masking or overlayering elements to both my physical and digital work. I also have experience drawing and have focused on the figure and the portrait. I am comfortable manipulating photos with Adobe Photoshop as well as creating vector art with Adobe illustrator.
+
+		p I am the bassiest for jCherry and Strawberries, a blues and rock group. The band <a href="http://www.middletownpress.com/general-news/20140711/j-cherry-and-strawberries-concert-to-debut-album-recorded-in-middletown" target="_blank">released an album</a> July of 2014 thanks to a <a href="https://www.kickstarter.com/projects/373251923/in-the-belly-of-the-beast" target="_blank">successful kickstarter campaign</a>. In addition to playing bass, I sing and play guitar for the "<a href="https://www.youtube.com/watch?v=dmYbRh_vqrc" target="_blank">Dogs on Prozac</a>" track, an original song of mine.
+
+		ul.linkList
+			li
+				a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
+					span See more art on my Tumblr blog
+			li
+				a.si.youtube(href="http://youtube.com/sfarthing",target="_blank")
+					span Watch my performances on YouTube
+			//- li
+			//- 	a.si.vimeo(href="https://vimeo.com/stevefar",target="_blank")
+			//- 		span See my instructional videos for home recording on Vimeo
+
+		.down-arrow.bounce.animated
+			a.glyphicon.glyphicon-chevron-down(href="/#web-developer")
+
+	a(name="web-developer")
+	.developerPane(name="developer")
+		h1 Web Developer
+		p I am a fullstack web developer with a deep knowledge of both the LAMP and MEAN stacks, specializing in writing Javascript that is testable and reusable.
+
+		ul
+			li Excellent with responsive design, CSS3 and handling browser quirks with precursors like LESS
+			li Pure javascript knowledge and expertise in Bower, Backbone, Underscore, and Angular 
+			li Unit tester (e.g. Mocha, Karma), task manager (e.g. Gulp, Grunt) and optimizer (e.g. rjs, browserify)
+			li Expertise in Node.js (e.g. NPM, Express.js, Socket.io) and PHP (e.g. MVC, Codeigniter)
+			li Fluent in SQL and modern databases (e.g. redis, couchdb) plus BaaS (e.g. Firebase, AWS, Google)
+			li Proficiency in server configuration (e.g. Apache, Nginx) and deployment (e.g. Docker, Heroku)
+
+		//- http://www.nsf.gov/awardsearch/showAward?AWD_ID=0843855&HistoricalAwards=false
+
+		//-
+			Social Psychology Network offers an interactive directory who specialize in social or personality psychology. The Files Uploading System allows Psychology professionals to upload and manage: high-resolution images, slides or lecture notes from a presentation, data files and codebooks from research, supplemental material related to a publication, unpublished manuscripts and preprints, or brochures describing books and other projects. Utilizing XHR uploads for capable browsers and workarounds for older browsers, this feature allows the user to continue managing their profile while uploads finish in the background. In addition, this feature takes advantage of the HTML5 file upload API for previewing and rotating images before the uploads are finished uploading. Using this HTML5 fatures, the system is optimized so a user is not required to wait for file uploads while editing their profile. I developed this application and contributed to its design.
+
+		.projects-and-experience
+
+			div
+				h2 Experience
+				.experience
+					article
+						h3 <a href="http://www.socialpsychology.org" target="_blank">Social Psychology Network</a>
+						h6 July 2009 to Present
+						p Social Psychology Network's mission is to promote peace, social justice, and sustainable living. The Network was awarded a <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0843855" target="_blank">grant from the National Science Foundation (NSF)</a> and hired myself to join the one other full-time technical lead. I created interactive maps and directories, interative Social Psychology demonstrations and helped put together <a href="https://www.coursera.org/course/socialpsychology" target="_blank">the largest online class on Coursera</a>.
+						p I incorporated software development practices such as Git, Codeigniter (a PHP framework) and semantic markup and CSS instead of table design into the exisiting LAMP systems. Over time, uptime and server load became a problem at the university so I lead the process of setting up new virtual servers while proxing exisiting content. I took this opportunity to develop a modern MEAN stack which included push to deploy, Grunt/Gulp task managing, modern javascript libraries such as <strong>Angular.js</strong> (see my <a href="http://gist.io/8871692" target="_blank">blog post</a>) and <strong>Backbone.js</strong>, Nginx webserver and proxy server, <strong>Node.js</strong> services such as socket.io, unit/e2e test, <strong>Docker</strong> for deployments, optimized Require.js, and compiled LESS.
+			
+					article
+						h3 <a href="http://www.idsnews.com/news/story.aspx?id=69599" target="_blank">CultureU</a> 
+						h6 January 2009 - July 2009
+						p CultureU was a startup that designed a "cultural networking" site for college students to expose their creative talents through online portfolios and connect with other students, professionals, and locals. The CultureU project grew to include 30 students and faculty who actively contributed.
+
+					article
+						h3 <a href="http://alumni.indiana.edu/" target="_blank">Indiana University Alumni Association</a>
+						h6 March 2008 - July 2009
+						p At the IUAA, I managed and updated existing web pages and databases, designed and created new database-driven websites incorporating new technologies, and I automated existing procedures.
+
+			div
+				h2 Projects
+				.projects
+					article
+						h3 <a href="http://www.socialpsychology.org/membership-directory" target="_blank">Social Psychology Profiles</a>
+						p <img src="/img/spn-logo.png" style="float:left;width: 100px;margin: 0px 10px;">Social Psychology Network allows its member's to make their own page on the network. Experts in social psychology are given special profiles within the network. Users for example can pinpoint their geographic location, upload and manipulate images, display their <a href="http://www.socialpsychology.org/upload/view/85057/statement.pdf" target="_blank">Coursera statements of accomplishments</a>, list publications, and upload datafile uploads. This information can be displayed on their <a href="http://www.socialpsychology.org/member/farthing" target="_blank">public profile</a>. Over 5,000 users have cropped a photo and pinpointed a geographic location and are placed in the <a href="http://www.socialpsychology.org/membership-directory" target="_blank">Membership Directory</a>. I developed all parts of this application and contributed to a large part of its design. Some pieces of this system have been open sourced and are referred in the code examples below.
+
+					article
+						h3 <a href="http://www.socialpsychology.org/maps/experts" target="_blank">World Map of Social Psychology Experts</a>
+						p <img src="/img/marker-group.png" style="float:left;width: 100px;margin: 10px 10px;">This interactive map allows one to search thousands of profiled social psychology experts. Experts can be found geographically by zooming and panning the map or limiting by research topics. One can also limit the map to media contacts, expert witnesses, public speakers, and other types of experts. I developed this application and contributed to its design. I created a <a href="https://stevefar.com/marker-flock/" target="_blank">plugin that would cluster markers into groups</a> for use on the maps. I also developed the <a href="http://www.socialpsychology.org/maps/gradprograms" target="_blank">Graduate Program Map</a> and the <a href="http://www.socialpsychology.org/maps/researchgroups" target="_blank">Research Group Map</a>.
+
+					article
+						h3 <a href="http://www.understandingprejudice.org/segregation/" target="_blank">Can You Avoid Segregation App</a>
+						p <img src="/img/segregation.png" style="float:left;width: 100px;margin: 10px 10px;">Building on the work of Nobel Laureate Thomas Schelling, this interactive learning resource shows that small social preferences at the individual level can generate surprising patterns of segregation at the group level, and it shows how the same dynamic can be used to reverse segregation. A teacher who uses this app in his classroom wrote:
+
+						blockquote.
+							Steve,<br />
+							Thanks so much. This is such a great learning tool for High School students who
+							like games. The Illustrative aspects and the ability to turn the ideas
+							into discussion is invaluable. Discussing modern day Civil Rights issues,
+							which are much more subtle but not any less divisive, is a task that needs
+							your kind of help. 
+						//-<br /><br />
+						//- Thanks<br />
+						//- Mark White
+					article
+						h3 <a href="https://uGravity.com" target="_blank">Universal Gravity Simulator</a>
+						p This tool allows one to create 2D simulations of celestial bodies within the browser using Web workers and HTML5 canvas. All the code is <a href="https://github.com/sfarthin/ugravity.com" target="_blank">available on Github</a>.
+		h2 Code Examples
+		.examples
+			div
+				h3 <a href="https://github.com/sfarthin/stevefar.com" target="_blank">SteveFar.com</a>
+				p This repository holds all the code used to produce this website (<a href="//stevefar.com">SteveFar.com</a>). It is optimized with minified assests, vector images (SVG), and accomplishes all its interactivity without any client side javascript. It demonstrates an understanding of responsive design and use of visual frameworks (this page uses <a href="http://getbootstrap.com/" target="_blank">bootstrap</a>). I use advanced CSS (such as animation and flexbox) and use LESS mixins to accommodate browser prefixes and quirks. I am able to develop rapidly with tools such as Jade and <a href="http://gulpjs.com/" target="_blank">Gulp</a> (A less verbose task manager than Grunt).
+			//- div
+			//- 	h3 Image Manipulation Library
+			//- 	h6 $ bower install <strong>image-manipulation</strong>
+			//- 	p This library revels methods that allow image importing from input elements, manipulation, and xhr uploads. The example has uploads directly to Google Cloud Storage.
+			//- 	//- Angular There are unit tests with karma, AMD with Requirejs and rjs. and e2e selenium tests with protractor.
+			//- 	//- <strong> Show Selenium test video and photo wall of everyone who used it</strong>
+			div
+				h3 <a href="https://github.com/sfarthin/nodejs-google-cloud-storage" target="_blank">Google Cloud Storage Signed URLs for Node.js</a>
+				h6 $ npm install <strong>gcs-signed-urls</strong>
+				p I created this NPM module so that I can create web apps that allow users to upload directly to Google Cloud Storage. Using <a href="https://developers.google.com/storage/docs/accesscontrol#Signed-URLs" target="_blank">Signed URLs</a> I am able to control access with Node.js and a private key. Because there is not a Node.js SDK for Google Cloud Storage, the cryptographic signatures were coded using Node.js's crypto module to Google's specification. This integration alleviates much of the maintenance required in storing and handing file uploads in web apps while at the same time not complicating the uploading process by acting as a middleman between the user and Google Cloud Storage.
+			div
+				h3 <a href="https://github.com/sfarthin/node-process-manager" target="_blank">Node.js Process Manager</a>
+				h6 $ npm install <strong>node-process-manager</strong>
+				p I created this NPM module to manage node processes. It respawns node processes if one quits unexpectably, it shuts processes down gracefully to prevent any dropped connections (such as file uploads), and monitors stdout on a set of node processes.
+				//- (<strong>EXAMPLE WITH ZERO DOWNTIME</strong>).
+			//- div
+			//- 	h3 Docker build ngninx from source (docker module)
+			//- 	p <strong>TODO</strong> and publishing to Docker.
+			//- div
+			//- 	h3 uGravity
+			//- 	p The
+
+		//- h2 My Stack
+		//- p(style="margin-left:20px;margin-bottom:10px;margin-top:10px;") Although I am fully experienced with the <a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle)" target="_blank">LAMP</a> stack, I have mastered and embraced the <a href="http://mean.io/" target="_blank">MEAN</a> stack to take advantage of the modern web.
+		//- .stack
+		//- 	div
+		//- 		h3 Browser
+		//- 		p I know how to use pure javascript for DOM manipulation, nontrivial regular expressions and XHR. In addition, I have experience managing browser quirks and support for CSS and Javascript. I keep a watchful eye on the standerds in ECMAscript 6, most notably the "modules" feature.
+		//-
+		//- 	div
+		//- 		h3 Style and Design
+		//- 		p Responsive design. Mobile first. Bootstrap, foundation. iconography.
+		//-
+		//- 	div
+		//- 		h3 Browser features
+		//- 		p Experience in HTML5 canvas. CSS3 use of mixins to manage browser prefixes. Combination of CSS3 transformations and transitions to create reactive interfaces. Filereader and parsing EXIF from images
+		//-
+		//- 	div
+		//- 		h3 Clientside libraries
+		//- 		p Use of Angular (which I have <a href="http://gist.io/8871692" target="_blank">written about</a>), Underscore, Bower managing client side dependencies, Browserify, Require (for packaged in optimized), Backbone, various CSS precursors and Rapheal javascript libraries
+		//-
+		//- 	div
+		//- 		h3 Serverside Scripting
+		//- 		p Nodejs, express.js, socket.io. Stateless node.js api for use of clustering and load balancing. Also experience with PHP with MVC frameworks such as Codeignitor.
+		//-
+		//- 	div
+		//- 		h3 Services and APIs
+		//- 		p Experience integrations with REST and realtime APIs such Coursera OAuth, Zendesk, Mandrill, Google Cloud storage using signed URLs for clients to upload directly to Google, and Twitter streaming api. Heroku Imagemagick.
+		//-
+		//- 	div
+		//- 		h3 Webserver
+		//- 		p Experience with both Apache and Nginx for setting up features like proxies, reverse proxies, SSL, and wildcard DNS. Knowledge of server optimizations such as SPDY, sendfile, and the use cases of browser, server, and proxy cache.
+		//-
+		//- 	div
+		//- 		h3 Database
+		//- 		p Thorough understanding of relational databases such as Mysql along with experience with NoSql databases such as Couchdb/Mongo and understanding of mapReduce views. Thorough experience with proprietary services such as Firebase and integrations into Angular.js
+		//-
+		//- 	div
+		//- 		h3 Operating System
+		//- 		p Comfortable from the linux command-line with functions such as installing libraries from source, shell scripting, crontab backups, and SSH keys.
+		//-
+		//- 	div
+		//- 		h3 System
+		//- 		p Experience running remote Selenium tests in virtual machines for cross platform testing. Experienced in “Dockerizing” apps with Dockerfiles and Docker images for deployment anywhere. Creating load balancers with nginx or haproxy and grabbing benchmarks (siege).
+
+
+		//- http://www.idsnews.com/article/2013/08/cultureu-website-connects-fine-arts-students-to-jobs-opportunites?id=93774
+		ul.linkList
+			li
+				a.si.github(href="https://github.com/sfarthin",target="_blank")
+					span See more examples on Github
+			li
+				a.si.quora(href="http://stackoverflow.com/users/2509509/steve-farthing?tab=answers",target="_blank")
+					span See problems solved on StackOverflow
+
+	footer
+		a(href="/")
+			| Return to top
+			.glyphicon.glyphicon-arrow-up
