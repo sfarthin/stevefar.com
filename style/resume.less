@@ -23,7 +23,6 @@
 
 // Reset and dependencies
 @import "normalize.less";
-@import "print.less";
 @import "glyphicons.less";
 
 // Core CSS
@@ -54,15 +53,20 @@
 
 }
 
-@media print and (color) {
+body {
+	background-color: white;
+}
+
+
 * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
 /* presentation rules for the page on color printers */
-}
+
 
 body {
 	width: 8.5in;
 	height: 11in;
-	padding: 0.5in;
+	padding: 0.25in;
+	padding-bottom: 0px;
 }
 
 
@@ -143,9 +147,24 @@ h2 {
 
 h3 {
 	font-size: 17px;
-	margin-top: 15px;
+	margin-top: 10px;
 	margin-bottom: 4px;
 	color: #91170a;
+	
+	// Print font color http://jsfiddle.net/hDZBt/show/
+	color: rgba(255, 255, 250, 0);
+	text-shadow: 0 0 0 #91170a;
+}
+
+@media print and (-webkit-min-device-pixel-ratio:0) {
+	h3 {
+		color: #91170a;
+		-webkit-print-color-adjust: exact;
+	}
+}
+
+.experience article:last-child p {
+/*	margin-bottom: 3px;*/
 }
 
 
@@ -162,4 +181,23 @@ h3 {
 	color: #91170a;
 	line-height: 21px;
 	margin-left: 0px !important;
+}
+
+
+
+
+.projects-and-education {
+	.display(flex);
+	
+	h2 {
+		margin-top: 10px;
+	}
+	
+	> div {
+		.flex(1);
+		
+		&:first-child {
+			margin-right: 50px;
+		}
+	}
 }

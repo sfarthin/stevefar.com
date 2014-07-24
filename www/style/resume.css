@@ -193,77 +193,6 @@ td,
 th {
   padding: 0;
 }
-@media print {
-  * {
-    text-shadow: none !important;
-    color: #000 !important;
-    background: transparent !important;
-    box-shadow: none !important;
-  }
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  a[href^="javascript:"]:after,
-  a[href^="#"]:after {
-    content: "";
-  }
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-  }
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-  img {
-    max-width: 100% !important;
-  }
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
-  select {
-    background: #fff !important;
-  }
-  .navbar {
-    display: none;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-  .btn > .caret,
-  .dropup > .btn > .caret {
-    border-top-color: #000 !important;
-  }
-  .label {
-    border: 1px solid #000;
-  }
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #ddd !important;
-  }
-}
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('/fonts/glyphicons-halflings-regular.eot');
@@ -3242,17 +3171,19 @@ input[type="button"].btn-block {
     box-shadow: 5px 5px 5px 0px #777777;
   }
 }
-@media print and (color) {
-  * {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-  /* presentation rules for the page on color printers */
+body {
+  background-color: white;
 }
+* {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+/* presentation rules for the page on color printers */
 body {
   width: 8.5in;
   height: 11in;
-  padding: 0.5in;
+  padding: 0.25in;
+  padding-bottom: 0px;
 }
 header {
   display: -webkit-box;
@@ -3328,9 +3259,20 @@ h2 {
 }
 h3 {
   font-size: 17px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 4px;
   color: #91170a;
+  color: rgba(255, 255, 250, 0);
+  text-shadow: 0 0 0 #91170a;
+}
+@media print and (-webkit-min-device-pixel-ratio: 0) {
+  h3 {
+    color: #91170a;
+    -webkit-print-color-adjust: exact;
+  }
+}
+.experience article:last-child p {
+  /*	margin-bottom: 3px;*/
 }
 .education article p:nth-child(2) {
   margin-bottom: 0px;
@@ -3343,4 +3285,24 @@ h3 {
   color: #91170a;
   line-height: 21px;
   margin-left: 0px !important;
+}
+.projects-and-education {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.projects-and-education h2 {
+  margin-top: 10px;
+}
+.projects-and-education > div {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+.projects-and-education > div:first-child {
+  margin-right: 50px;
 }

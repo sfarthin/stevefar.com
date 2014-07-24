@@ -4,6 +4,21 @@ html(lang="en")
 		meta(name="viewport",content="width=device-width; initial-scale=1.0")
 		title Steve Farthing
 		link(rel="stylesheet",type="text/css",href="style/style.css")
+		link(rel="apple-touch-icon",sizes="57x57",href="/apple-touch-icon-57x57.png")
+		link(rel="apple-touch-icon",sizes="114x114",href="/apple-touch-icon-114x114.png")
+		link(rel="apple-touch-icon",sizes="72x72",href="/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon",sizes="144x144",href="/apple-touch-icon-144x144.png")
+		link(rel="apple-touch-icon",sizes="60x60",href="/apple-touch-icon-60x60.png")
+		link(rel="apple-touch-icon",sizes="120x120",href="/apple-touch-icon-120x120.png")
+		link(rel="apple-touch-icon",sizes="76x76",href="/apple-touch-icon-76x76.png")
+		link(rel="apple-touch-icon",sizes="152x152",href="/apple-touch-icon-152x152.png")
+		link(rel="icon",type="image/png",href="/favicon-196x196.png",sizes="196x196")
+		link(rel="icon",type="image/png",href="/favicon-160x160.png",sizes="160x160")
+		link(rel="icon",type="image/png",href="/favicon-96x96.png",sizes="96x96")
+		link(rel="icon",type="image/png",href="/favicon-16x16.png",sizes="16x16")
+		link(rel="icon",type="image/png",href="/favicon-32x32.png",sizes="32x32")
+		meta(name="msapplication-TileColor",content="#000000")
+		meta(name="msapplication-TileImage",content="/mstile-144x144.png")
 	body(onload="navigator.userAgent.match(/(iPad|iPhone|iPod)/g) && document.querySelector('video').setAttribute('controls','controls')")
 		header
 			.logoWrapper
@@ -124,12 +139,12 @@ html(lang="en")
 						p <img src="/img/segregation.png" style="float:left;width: 100px;margin: 10px 10px;">Building on the work of Nobel Laureate Thomas Schelling, this interactive learning resource shows that small social preferences at the individual level can generate surprising patterns of segregation at the group level, and it shows how the same dynamic can be used to reverse segregation. A teacher who uses this app in his classroom wrote:
 
 						blockquote.
-							Steve,<br />
+							"Steve,<br />
 							Thanks so much. This is such a great learning tool for High School students who
 							like games. The Illustrative aspects and the ability to turn the ideas
 							into discussion is invaluable. Discussing modern day Civil Rights issues,
 							which are much more subtle but not any less divisive, is a task that needs
-							your kind of help. 
+							your kind of help."
 						//-<br /><br />
 						//- Thanks<br />
 						//- Mark White
@@ -139,18 +154,18 @@ html(lang="en")
 
 					article
 						h3 <a href="http://ima-brandbuilder.com/" target="_blank">ima Brand Builder</a>
-						p Worked with Creative Professional Lucy Raia to create her online portfolio from mockups. The site utilized a responsive design, 3d CSS animations, and the HTML5 History API to create page transitions that work with browser controls (back and forward buttons).
+						p I worked with Creative Professional Lucy Raia to create her online portfolio from mockups. The site utilized a responsive design, 3D CSS animations, and the HTML5 History API to create page transitions that work with browser controls (back and forward buttons).
 
 		h2 Code Examples
 		.examples
 			div
 				h3 <a href="https://github.com/sfarthin/stevefar.com" target="_blank">SteveFar.com</a>
 				p This repository holds all the code used to produce this website (<a href="//stevefar.com">SteveFar.com</a>). It is optimized with minified assests, vector images (SVG), and accomplishes all its interactivity without any client side javascript. It demonstrates an understanding of responsive design and use of visual frameworks (this page uses <a href="http://getbootstrap.com/" target="_blank">bootstrap</a>). I use advanced CSS (such as animation and flexbox) and use LESS mixins to accommodate browser prefixes and quirks. I am able to develop rapidly with tools such as Jade and <a href="http://gulpjs.com/" target="_blank">Gulp</a> (A less verbose task manager than Grunt). I also developed my resume in HTML/CSS and made it printable from the browser.
-			//- div
-			//- 	h3 Image Manipulation Library
-			//- 	h6 $ bower install <strong>image-manipulation</strong>
-			//- 	p This library revels methods that allow image importing from input elements, manipulation, and xhr uploads. The example has uploads directly to Google Cloud Storage.
-			//- 	//- Angular There are unit tests with karma, AMD with Requirejs and rjs. and e2e selenium tests with protractor.
+			div
+				h3 <a href="https://github.com/sfarthin/crop-rotate-and-sample-in-browser" target="_blank">Image Manipulation Library</a>
+				h6 $ bower install <strong>image-manipulation</strong>
+				p This library revels methods that allow image cropping, rotating, resizing, and xhr uploads. The <a href="http://floating-spire-3371.herokuapp.com/" target="_blank">demo</a> uses Requirejs, Angularjs, JCrop and uploads these images directly to Google Cloud Storage (using library in next code example). Over <a href="http://www.socialpsychology.org/membership-directory" target="_blank">6,000 Social Psychology Network members</a> have selected their portrait photo using these methods.
+				//- Angular There are unit tests with karma, AMD with Requirejs and rjs. and e2e selenium tests with protractor.
 			//- 	//- <strong> Show Selenium test video and photo wall of everyone who used it</strong>
 			div
 				h3 <a href="https://github.com/sfarthin/nodejs-google-cloud-storage" target="_blank">Google Cloud Storage Signed URLs for Node.js</a>
@@ -225,3 +240,12 @@ html(lang="en")
 		a(href="/")
 			| Return to top
 			.glyphicon.glyphicon-arrow-up
+
+	script.
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-4237287-8', 'auto');
+		ga('send', 'pageview');
