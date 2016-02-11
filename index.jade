@@ -49,68 +49,76 @@ html(lang="en")
 				a.si.linked_in(href="http://www.linkedin.com/in/stevefarthing",target="_blank")
 				a.si.e-mail(href="mailto:me@stevefar.com")
 				a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
-
-		p.intro I am a <a href="/#web-developer">web developer</a>, <a href="/#artist">artist and musician</a> living in central Connecticut. I have developed each level involved in building a web application, from cutting edge CSS and javascript on the frontend to deploying and scaling backend servers. As a visual artist I have experience with traditional art such as printmaking, sumi-e painting and portraiture. I am a folk singer, songwriter and have played a number of different instruments live and in the studio.
-
-		.down-arrow.bounce.animated
-			a.glyphicon.glyphicon-chevron-down(href="/#artist")
-
-	a(name="artist")
-	.artistPane(name="artist")
-		h1 Artist / Musician
-
-
-		video(width="640",height="352",poster="//storage.googleapis.com/stevefar/poster.jpg",autoplay,loop)
-			source(src="//storage.googleapis.com/stevefar/webclip.mp4")
-			//- <source src="http://www.the exact location of your WEBM video.webm" />
-			//- <source src="http://www.the exact location of your OGG video.ogg" />
-
-		p As a visual artist, I have experience with traditional woodblock and monotype printmaking. I have applied this understanding of composition and tools such as masking or overlayering elements to both my physical and digital work. I also have experience drawing and have focused on the portrait as well as the figure. I am comfortable manipulating photos with Adobe Photoshop as well as creating vector art with Adobe Illustrator.
-
-		p I am the bassist for jCherry and Strawberries, a blues and rock group. The band <a href="http://www.middletownpress.com/general-news/20140711/j-cherry-and-strawberries-concert-to-debut-album-recorded-in-middletown" target="_blank">released an album</a> July of 2014 thanks to a <a href="https://www.kickstarter.com/projects/373251923/in-the-belly-of-the-beast" target="_blank">successful kickstarter campaign</a>. In addition to playing bass on the album, I sing and play guitar for the "<a href="https://www.youtube.com/watch?v=dmYbRh_vqrc" target="_blank">Dogs on Prozac</a>" track, an original song of mine.
-
-		ul.linkList
-			li
-				a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
-					span See more art on my Tumblr blog
-			li
 				a.si.youtube(href="http://youtube.com/sfarthing",target="_blank")
-					span Watch my performances on YouTube
-			//- li
-			//- 	a.si.vimeo(href="https://vimeo.com/stevefar",target="_blank")
-			//- 		span See my instructional videos for home recording on Vimeo
+
+		p.intro I am an entrepreneur, technologist, and musician in New England. I have a B.S. in Computer Science from Indiana University and a M.A. in Liberal Studies from Wesleyan University. I cofounded <a href="https://quinncia.io" target="_blank">Quinncia</a> and have gone through the <a href="http://www.startupnext.co/" target="_blank">StartupNext Boston</a> accelerator. I am also part of a blues and rock group, <a href="http://www.middletownpress.com/general-news/20140711/j-cherry-and-strawberries-concert-to-debut-album-recorded-in-middletown" target="_blank">jCherry and Strawberries</a>.
+
+
+		// As a visual artist I have experience with traditional art such as printmaking, sumi-e painting and portraiture. I am a folk singer, songwriter and have played a number of different instruments live and in the studio.
 
 		.down-arrow.bounce.animated
-			a.glyphicon.glyphicon-chevron-down(href="/#web-developer")
+			a.glyphicon.glyphicon-chevron-down(href="/#quinncia")
 
-	a(name="web-developer")
-	.developerPane(name="developer")
-		h1 Developer
-		p I am a fullstack web developer with a deep knowledge of both the LAMP and MEAN stacks, specializing in writing isomorphic Javascript that is testable and reusable. I have a zeal for using new capabilities of web browsers and have experience with WebRTC, Web Workers, Web Sockets, Web Audio API, File API, and Canvas to create next generation web apps. My tools/frameworks of choice are React, Fluxible, cucumberjs, and webpack.
+	//- a(name="artist")
+	//- .artistPane(name="artist")
+	//- 	h1 Artist / Musician
+	//-
+	//-
+	//- 	video(width="640",height="352",poster="//storage.googleapis.com/stevefar/poster.jpg",autoplay,loop)
+	//- 		source(src="//storage.googleapis.com/stevefar/webclip.mp4")
+	//- 		//- <source src="http://www.the exact location of your WEBM video.webm" />
+	//- 		//- <source src="http://www.the exact location of your OGG video.ogg" />
+	//-
+	//- 	p As a visual artist, I have experience with traditional woodblock and monotype printmaking. I have applied this understanding of composition and tools such as masking or overlayering elements to both my physical and digital work. I also have experience drawing and have focused on the portrait as well as the figure. I am comfortable manipulating photos with Adobe Photoshop as well as creating vector art with Adobe Illustrator.
+	//-
+	//- 	p I am the bassist for jCherry and Strawberries, a blues and rock group. The band <a href="http://www.middletownpress.com/general-news/20140711/j-cherry-and-strawberries-concert-to-debut-album-recorded-in-middletown" target="_blank">released an album</a> July of 2014 thanks to a <a href="https://www.kickstarter.com/projects/373251923/in-the-belly-of-the-beast" target="_blank">successful kickstarter campaign</a>. In addition to playing bass on the album, I sing and play guitar for the "<a href="https://www.youtube.com/watch?v=dmYbRh_vqrc" target="_blank">Dogs on Prozac</a>" track, an original song of mine.
+	//-
+	//- 	ul.linkList
+	//- 		li
+	//- 			a.si.tumblr(href="http://blog.stevefar.com/",target="_blank")
+	//- 				span See more art on my Tumblr blog
+	//- 		li
+	//- 			a.si.youtube(href="http://youtube.com/sfarthing",target="_blank")
+	//- 				span Watch my performances on YouTube
+	//- 		//- li
+	//- 		//- 	a.si.vimeo(href="https://vimeo.com/stevefar",target="_blank")
+	//- 		//- 		span See my instructional videos for home recording on Vimeo
+	//-
 
-		ul
-			li Ability to work with designers to bring ideas and mockups to fruition by leveraging vector art with Adobe CS
-			li Excellent responsive design, CSS3 (e.g. flexbox, animation) and browser quirk handling with precursors like LESS
-			li Expertise in JS APIs (e.g. FileReader, Web Workers, Canvas) plus angular, lodash, and React libraries
-			li Unit tester (e.g. Mocha, Karma, Protractor), task manager (e.g. Gulp, Grunt) and optimizer (e.g. rjs, browserify, webpack)
-			li Expertise in Node.js (e.g. express, fluxible), PHP (e.g. Codeigniter) and serverside tools (e.g. ImageMagick, PhantomJS)
-			li Fluent in SQL and modern databases (e.g. redis, mongodb) plus cloud services (e.g. Firebase, AWS, Google Cloud)
-			li Proficiency in server configuration (e.g. Apache, Nginx), benchmarking and deployment (e.g. Docker, Heroku)
+	//-
+	a(name="quinncia")
+	.developerPane(name="quinncia")
+		video(poster="//storage.googleapis.com/quinncia-assets/quinncia-poster.png",controls)
+			source(src="//storage.googleapis.com/quinncia-assets/intro.mp4")
+		h1 <a href="https://quinncia.io" target="_blank" style="text-decoration: none">Quinncia</a>
+		p(style="line-height: 36px;color: #ddd;margin-top: 30px;") Quinncia is a job marketplace for students and employers. Our automated interviews, similar to a Skype interview with Siri, help student's highlight their personality and abilities. Hiring managers are interviewed to give insights to job expectations and company culture.
+		p(style="line-height: 36px;") In addition, we partner with university career centers to provide video analysis and feedback tools so advisors can send quality feedback directly to their students.
+		div(style="clear:both;")
+
+		//- .down-arrow.bounce.animated
+		//- 	a.glyphicon.glyphicon-chevron-down(href="/#experience")
+
+		//- ul
+		//- 	li Ability to work with designers to bring ideas and mockups to fruition by leveraging vector art with Adobe CS
+		//- 	li Excellent responsive design, CSS3 (e.g. flexbox, animation) and browser quirk handling with precursors like LESS
+		//- 	li Expertise in JS APIs (e.g. FileReader, Web Workers, Canvas) plus angular, lodash, and React libraries
+		//- 	li Unit tester (e.g. Mocha, Karma, Protractor), task manager (e.g. Gulp, Grunt) and optimizer (e.g. rjs, browserify, webpack)
+		//- 	li Expertise in Node.js (e.g. express, fluxible), PHP (e.g. Codeigniter) and serverside tools (e.g. ImageMagick, PhantomJS)
+		//- 	li Fluent in SQL and modern databases (e.g. redis, mongodb) plus cloud services (e.g. Firebase, AWS, Google Cloud)
+		//- 	li Proficiency in server configuration (e.g. Apache, Nginx), benchmarking and deployment (e.g. Docker, Heroku)
 
 		//- http://www.nsf.gov/awardsearch/showAward?AWD_ID=0843855&HistoricalAwards=false
-
 		//-
-			Social Psychology Network offers an interactive directory who specialize in social or personality psychology. The Files Uploading System allows Psychology professionals to upload and manage: high-resolution images, slides or lecture notes from a presentation, data files and codebooks from research, supplemental material related to a publication, unpublished manuscripts and preprints, or brochures describing books and other projects. Utilizing XHR uploads for capable browsers and workarounds for older browsers, this feature allows the user to continue managing their profile while uploads finish in the background. In addition, this feature takes advantage of the HTML5 file upload API for previewing and rotating images before the uploads are finished uploading. Using this HTML5 fatures, the system is optimized so a user is not required to wait for file uploads while editing their profile. I developed this application and contributed to its design.
+		//-
+		//- 	Social Psychology Network offers an interactive directory who specialize in social or personality psychology. The Files Uploading System allows Psychology professionals to upload and manage: high-resolution images, slides or lecture notes from a presentation, data files and codebooks from research, supplemental material related to a publication, unpublished manuscripts and preprints, or brochures describing books and other projects. Utilizing XHR uploads for capable browsers and workarounds for older browsers, this feature allows the user to continue managing their profile while uploads finish in the background. In addition, this feature takes advantage of the HTML5 file upload API for previewing and rotating images before the uploads are finished uploading. Using this HTML5 fatures, the system is optimized so a user is not required to wait for file uploads while editing their profile. I developed this application and contributed to its design.
 
 		//- .projects-and-experience
 
+	a(name="experience")
+	.experiencePane(name="experience")
 		div
-			h2 Experience
+			h2(style="margin-top:20px;margin-bottom:40px;") Past Experience
 			.experience
-				article
-					h3 Founder and CTO - <a href="https://quinncia.io/" target="_blank">Quinncia</a>
-					h6 February 2015 - Present
-					p Quinncia creates a two-way transparency between students and employers for efficient hiring. Our automated interviews, similar to a Skype interview with "Siri", help student's highlight their personality and abilities. Hiring managers are interviewed to give insights to job expectations and company culture.
 				article
 					h3 Senior Web Developer - <a href="http://www.teamdigital.com/" target="_blank">teamDigital</a>
 					h6 January 2015
@@ -119,7 +127,7 @@ html(lang="en")
 					h3 Fullstack Developer - <a href="http://www.socialpsychology.org" target="_blank">Social Psychology Network</a>
 					h6 July 2009 to December 2014
 					p Social Psychology Network's mission is to promote peace, social justice, and sustainable living. The Network was awarded a <a href="http://www.nsf.gov/awardsearch/showAward?AWD_ID=0843855" target="_blank">grant from the National Science Foundation (NSF)</a> and hired myself to join the one other full-time technical lead. I created interactive maps and directories, interative Social Psychology demonstrations and helped put together <a href="https://www.coursera.org/course/socialpsychology" target="_blank">the largest online class on Coursera</a>.
-					p I incorporated software development practices such as Git, Codeigniter (a PHP framework) and semantic markup and CSS instead of table design into the exisiting LAMP systems. Over time, uptime and server load became a problem at the university so I lead the process of setting up new virtual servers while proxing exisiting content. I took this opportunity to develop a modern MEAN stack which included push to deploy, Grunt/Gulp task managing, modern javascript libraries such as <strong>Angular.js</strong> (see my <a href="http://gist.io/8871692" target="_blank">blog post</a>) and <strong>Backbone.js</strong>, Nginx webserver and proxy server, <strong>Node.js</strong> services such as socket.io, unit/e2e test, <strong>Docker</strong> for deployments, optimized Require.js, and compiled LESS.
+					//- p I incorporated software development practices such as Git, Codeigniter (a PHP framework) and semantic markup and CSS instead of table design into the exisiting LAMP systems. Over time, uptime and server load became a problem at the university so I lead the process of setting up new virtual servers while proxing exisiting content. I took this opportunity to develop a modern MEAN stack which included push to deploy, Grunt/Gulp task managing, modern javascript libraries such as <strong>Angular.js</strong> (see my <a href="http://gist.io/8871692" target="_blank">blog post</a>) and <strong>Backbone.js</strong>, Nginx webserver and proxy server, <strong>Node.js</strong> services such as socket.io, unit/e2e test, <strong>Docker</strong> for deployments, optimized Require.js, and compiled LESS.
 		
 				article
 					h3 Frontend Developer - <a href="http://www.idsnews.com/news/story.aspx?id=69599" target="_blank">CultureU</a> 
@@ -252,15 +260,16 @@ html(lang="en")
 
 
 		//- http://www.idsnews.com/article/2013/08/cultureu-website-connects-fine-arts-students-to-jobs-opportunites?id=93774
-		ul.linkList
-			li
-				a.si.github(href="https://github.com/sfarthin",target="_blank")
-					span See code examples on Github
-			li
-				a.si.quora(href="http://stackoverflow.com/users/2509509/steve-farthing?tab=answers",target="_blank")
-					span See problems solved on StackOverflow
+		//- ul.linkList
+		//- 	li
+		//- 		a.si.github(href="https://github.com/sfarthin",target="_blank")
+		//- 			span See code examples on Github
+		//- 	li
+		//- 		a.si.quora(href="http://stackoverflow.com/users/2509509/steve-farthing?tab=answers",target="_blank")
+		//- 			span See problems solved on StackOverflow
 
 	footer
+		span &copy; 2016 Steve Farthing
 		a(href="/")
 			| Return to top
 			.glyphicon.glyphicon-arrow-up

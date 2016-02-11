@@ -911,12 +911,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #d9230f;
+  color: #30b0f2;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #91170a;
+  color: #0d89c9;
   text-decoration: underline;
 }
 a:focus {
@@ -1151,10 +1151,10 @@ mark,
   color: #808080;
 }
 .text-primary {
-  color: #d9230f;
+  color: #30b0f2;
 }
 a.text-primary:hover {
-  color: #a91b0c;
+  color: #0e99e1;
 }
 .text-success {
   color: #468847;
@@ -1182,10 +1182,10 @@ a.text-danger:hover {
 }
 .bg-primary {
   color: #fff;
-  background-color: #d9230f;
+  background-color: #30b0f2;
 }
 a.bg-primary:hover {
-  background-color: #a91b0c;
+  background-color: #0e99e1;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -2834,8 +2834,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #d9230f;
-  border-color: #d9230f;
+  background-color: #30b0f2;
+  border-color: #30b0f2;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -2843,8 +2843,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #a91b0c;
-  border-color: #a01a0b;
+  background-color: #0e99e1;
+  border-color: #0e93d7;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -2866,11 +2866,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #d9230f;
-  border-color: #d9230f;
+  background-color: #30b0f2;
+  border-color: #30b0f2;
 }
 .btn-primary .badge {
-  color: #d9230f;
+  color: #30b0f2;
   background-color: #ffffff;
 }
 .btn-success {
@@ -3038,7 +3038,7 @@ fieldset[disabled] .btn-danger.active {
   background-color: #ffffff;
 }
 .btn-link {
-  color: #d9230f;
+  color: #30b0f2;
   font-weight: normal;
   cursor: pointer;
   border-radius: 0;
@@ -3060,7 +3060,7 @@ fieldset[disabled] .btn-link {
 }
 .btn-link:hover,
 .btn-link:focus {
-  color: #91170a;
+  color: #0d89c9;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -3495,16 +3495,18 @@ p ~ p {
 }
 p.intro {
   font-size: 22px;
+  line-height: 39px;
   text-align: center;
   max-width: 1200px;
   display: block;
   padding: 0px 20px;
+  margin-top: 150px;
 }
 .down-arrow {
   display: block;
   font-size: 40px;
   text-align: center;
-  color: #d9230f;
+  color: #30b0f2;
   -moz-animation-iteration-count: 6;
   -o-animation-iteration-count: 6;
   -webkit-animation-iteration-count: 6;
@@ -3699,38 +3701,38 @@ ul.linkList li {
   box-shadow: 0px 0px 5px 0px #777777;
 }
 .artistPane,
-.developerPane {
+.developerPane,
+.experiencePane {
   padding: 30px;
 }
 .artistPane ul,
-.developerPane ul {
+.developerPane ul,
+.experiencePane ul {
   margin-top: 30px;
   font-size: 18px;
 }
-.artistPane,
+.developerPane,
 footer {
-  background-image: url(/img/guitar.svg), linear-gradient(#4f5151, #474949 6%, #3f4141);
+  background-image: linear-gradient(#4f5151, #474949 6%, #3f4141);
   background-repeat: no-repeat, repeat;
   background-size: auto 100%, 100% 100%;
   background-position: top right;
 }
-.artistPane h1,
+.developerPane h1,
 footer h1,
-.artistPane p,
+.developerPane p,
 footer p {
   color: #dddddd;
 }
-.artistPane a,
+.developerPane a,
 footer a {
-  color: #f2bebe;
+  color: #b9e4fe;
 }
-.artistPane a:hover,
+.developerPane a:hover,
 footer a:hover {
-  color: #ff331f;
-  color: #d9230f;
-  color: #f29e9e;
+  color: #d2eefe;
 }
-.artistPane video,
+.developerPane video,
 footer video {
   float: right;
   padding: 0px;
@@ -3738,8 +3740,11 @@ footer video {
   -moz-box-shadow: 0px 0px 20px 10px #777777;
   -webkit-box-shadow: 0px 0px 20px 10px #777777;
   box-shadow: 0px 0px 20px 10px #777777;
-  margin-left: 30px;
-  margin-top: 50px;
+  margin-left: 60px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  max-width: 627px;
+  width: 100%;
 }
 footer {
   text-align: center;
@@ -3805,12 +3810,12 @@ h2 {
   margin-bottom: 50px;
 }
 ::-moz-selection {
-  background: #d9230f;
+  background: #30b0f2;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #d9230f;
+  background: #30b0f2;
   color: #fff;
   text-shadow: none;
 }
@@ -3842,6 +3847,17 @@ h2 {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+  }
+  .developerPane video,
+  footer video {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    display: block;
+  }
+  .developerPane h1 {
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
