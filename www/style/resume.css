@@ -3206,6 +3206,9 @@ header {
 .logoWrapper img {
   height: 100%;
 }
+li strong {
+  color: #91170a;
+}
 .si {
   height: auto;
   font-size: 16px;
@@ -3276,6 +3279,16 @@ h3 {
 }
 .education article p:nth-child(2) {
   margin-bottom: 0px;
+}
+.education > div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.education > div article {
+  flex: 1;
 }
 .intro {
   font-size: 17px;
