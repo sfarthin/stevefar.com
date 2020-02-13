@@ -9,56 +9,70 @@ html(lang="en")
 			.logoWrapper 
 				img.logo(src="/img/logo-forprint.svg")
 			.contact
-				a.si.e-mail <strong>me@stevefar.com</strong>
-				//- a.phone.si
-					//- img(src="/img/phone-icon.svg")
-					//- | <strong>(860) 759-6023</strong>
-				//- a.website.si
-					//- img(src="/img/website-icon.svg")
-					//- | <strong>stevefar.com</strong>
-				//- a.si.github github.com/<strong>sfarthin</strong>
-				//- a.si.linked_in linkedin.com/in/<strong>stevefarthing</strong>
+				a.si.e-mail
+					script.
+						document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'&'+'#'+'1'+'0'+'9'+';'+'a'+'i'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'s'+'%'+'7'+'4'+'e'+'&'+'#'+'3'+'7'+';'+'7'+'6'+'e'+'f'+'&'+'#'+'9'+'7'+';'+'&'+'#'+'3'+'7'+';'+'7'+'2'+'t'+'h'+'i'+'&'+'#'+'1'+'1'+'0'+';'+'g'+'&'+'#'+'5'+'6'+';'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'6'+'4'+';'+'%'+'6'+'7'+'&'+'#'+'1'+'0'+'9'+';'+'%'+'&'+'#'+'5'+'4'+';'+'1'+'%'+'6'+'9'+'l'+'&'+'#'+'4'+'6'+';'+'c'+'o'+'m'+"'"+'>'+'&'+'#'+'1'+'1'+'5'+';'+'&'+'#'+'1'+'1'+'6'+';'+'&'+'#'+'1'+'0'+'1'+';'+'v'+'e'+'f'+'a'+'r'+'t'+'h'+'i'+'n'+'g'+'8'+'&'+'#'+'5'+'4'+';'+'&'+'#'+'6'+'4'+';'+'&'+'#'+'1'+'0'+'3'+';'+'m'+'a'+'i'+'l'+'&'+'#'+'4'+'6'+';'+'c'+'o'+'m'+'<'+'/'+'a'+'>');
 		.profile
-			p.intro I am an experienced fullstack engineer that excels in building universal javascript applications. I leverage functional programming principals in order to write modular and testable software.
+			p.intro I am a fullstack engineer with proven experience architecting and building out ambitious applications that leverage machine learning and new device capabilities.
 
 		.skills
 			h2 Technical Skills
-			ul
-				li Ability to work with and build <strong>agile</strong> teams of developers and designers to bring ideas to fruition using version control
-				li Excellent responsive CSS (e.g. <strong>flexbox</strong>, animation) with precursors (SCSS) or composable CSS (<strong>styled-components</strong>)
-				li Expertise in <strong>new JS APIs</strong> (e.g. WebRTC, FileReader, Web Workers, Canvas), <strong>ES6</strong> and modern tools like <strong>React</strong> and <strong>Flux</strong>
-				li Comfortable in linux and ability to fold in exisiting solutions in the toolchain with Node.js or frontend bundler (e.g. <strong>webpack</strong>)
-				li Fluent in SQL and NoSQL databases (e.g. redis, mongodb) plus <strong>cloud</strong> platforms (e.g. Google Cloud, AWS)
-				li Proficiency in <strong>server configuration</strong> (e.g. Apache, Nginx) and deployment (e.g. Docker, Heroku)
-				li Experience extracting value from data and understanding how to apply <strong>machine learning</strong> to problems
+			p Javascript | Node.js | React | Web Platform | ML Models | Static analysis | React Native | Electron | Serverless | Docker | Python
 
 		.experience
 			h2 Experience
+
+			article
+				h3 
+					span Simple Contacts / Simple Health
+					span Senior Engineer
+					span May 2017 to Present
+				p I made major architecture contributions on all levels of the organization:
+				ul
+					li Transformed Simple Contacts' eye exam from an app with a basic time-based video recorder into an intelligent cross-platform interactive eye test that responds to the patient. 
+					li Built exam flow logic and custom ML models for face detection, eye occlusion, distance calculations, and speech detection from our labeled data. Put together process for training models on GPU machines and then did the integration on the web, mobile and servers.
+					li Architectured a method of capturing the exam experience and playing it back in a sandbox for evaluation. This allowed us to measure the effect of code or model changes on historic exams.
+					li Implemented original system to generate <a href="https://github.com/SimpleContacts/mysql-simulator">the API model layer from SQL migrations</a>. Similarly, I developed the original system to generate type-safe react code given GraphQL queries. These systems has been utilized across all out administrative, react native and the web products. 
+					li Gathered a consensus on code conventions, I introduced a series of code-mods to transform the fragmented codebase and maintained these conventions accross projects with a series of custom eslint rules.
+					li Transformed our client-side web app into SEO optimized web service <a href="https://github.com/SimpleContacts/react-router-async-routes">through server rendering and lazy loading of assets</a>.
 			
 			article
-				h3 Airclass (a Lenovo Software product), July 2016 to Present
-				p Airclass is a rich, immersive experience of a live training environment. I worked to make this WebRTC application scale and function in constrained cooperate environments as well as built up other collaborative features such as realtime annotations.
+				h3
+					span Airclass (a Lenovo Software product)
+					span Senior Engineer
+					span July 2016 to May 2017
+				p Airclass is a rich, immersive experience of a live training environment. I worked to make this WebRTC application scale and function in constrained cooperate environments as well as built up other collaborative features such as realtime annotations. Given the success of this feature, it has been integrated into other products.
 
 			article
-				h3 Quinncia, February 2015 to July 2016
-				p Quinncia, an automated interview platform and marketplace for students and employers, was cofounded by a business lead and myself as the tech lead. Quinncia was accepted in the StartupNext Boston accelerator with 8 other elite startups. All the technologies were developed by myself including reliably recording the student within the web browser plugin-free and universal javascript with React.
+				h3 
+					span Quinncia
+					span Cofounder and CTO
+					span February 2015 to July 2016
+					//- Quinncia, an automated interview platform and marketplace for students and employers, was cofounded by a business lead and myself as the tech lead. 
+				p Quinncia was accepted in the StartupNext Boston accelerator with 8 other elite startups. All the technologies were developed by myself including "filler word" detection, generated questions based on the user's experience and reliably recording the student within the web browser plugin-free.
 
 			article
-				h3 teamDigital, December 2014 to January 2015
+				h3
+					span teamDigital
+					span Senior Engineer
+					span December 2014 to January 2015
 				p I developed a platform that enabled the realtime moderation and judging of multiple SoundCloud.com, MLB, and NFL contests. Because of its success, the tool was repurposed as a universal moderation/judging tool for other contests.
 
 			article
-				h3 Social Psychology Network, July 2009 to December 2014
-				p Having been awarded a grant from the National Science Foundation, the Network hired myself to build a web community and continue their mission. As part of their small team, I built interactive psychological demonstrations in addition to a profile platform for thousands of social psychologists to show their research. I trained and managed student interns to help with testing and support requests. I also helped put together the largest course on Coursera, "Social Psychology" for hundred of thousands of students and worked with Coursera staff to include a new unique feature for the course.
-				//  such as the Segregation Demo, which is a web app that demonstrates how social preferences generate patterns of segregation
+				h3
+					span Social Psychology Network
+					span Lead Engineer
+					span July 2009 to December 2014
+					//- Having been awarded a grant from the National Science Foundation, the Network hired myself to build a web community and continue their mission. 
+				p As part of a small NSF-funded team, I built interactive psychological demonstrations in addition to a profile platform for thousands of social psychologists to show their research. I also helped put together the largest course on Coursera, "Social Psychology" for hundred of thousands of students and worked with Coursera staff to include a new unique feature for the course.
 			
-			article
-				h3 CultureU, January 2009 - July 2009
-				p CultureU was a startup that designed a "cultural networking" site for college students to expose their creative talents. I built portfolios and other interactive frontend features. CultureU grew to include 30 students and faculty who actively contributed.
+			//- article
+			//- 	h3 CultureU, January 2009 - July 2009
+			//- 	p CultureU was a startup that designed a "cultural networking" site for college students to expose their creative talents. I built portfolios and other interactive frontend features. CultureU grew to include 30 students and faculty who actively contributed.
 
-			article
-				h3 Indiana University Alumni Association, March 2008 - July 2009
-				p I developed an alumni directory, group travel planner and other database-driven applications to enhance the alumni experience.
+			//- article
+			//- 	h3 Indiana University Alumni Association, March 2008 - July 2009
+			//- 	p I developed an alumni directory, group travel planner and other database-driven applications to enhance the alumni experience.
 				//- *FD8FC87C0196614274B0C3E82A01046D736618C5
 
 		//- .projects-and-education

@@ -3397,12 +3397,12 @@ input[type="button"].btn-block {
 }
 @-webkit-keyframes front-border-shadow {
   0%,
-  50% {
+  80% {
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
-  60%,
+  90%,
   100% {
     -moz-box-shadow: 0px 0px 5px 2px #777777;
     -webkit-box-shadow: 0px 0px 5px 2px #777777;
@@ -3565,10 +3565,10 @@ ul.linkList li {
   -o-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -moz-animation: intro 6s 1 linear;
-  -webkit-animation: intro 6s 1 linear;
-  -o-animation: intro 6s 1 linear;
-  animation: intro 6s 1 linear;
+  -moz-animation: intro 5s 1 linear;
+  -webkit-animation: intro 5s 1 linear;
+  -o-animation: intro 5s 1 linear;
+  animation: intro 5s 1 linear;
   -webkit-transform: rotateX(-360deg);
   -moz-transform: rotateX(-360deg);
   -o-transform: rotateX(-360deg);
@@ -3665,10 +3665,10 @@ ul.linkList li {
   -moz-box-shadow: 0px 0px 5px 2px #777777;
   -webkit-box-shadow: 0px 0px 5px 2px #777777;
   box-shadow: 0px 0px 5px 2px #777777;
-  -moz-animation: front-border-shadow 6s 1 linear;
-  -webkit-animation: front-border-shadow 6s 1 linear;
-  -o-animation: front-border-shadow 6s 1 linear;
-  animation: front-border-shadow 6s 1 linear;
+  -moz-animation: front-border-shadow 5s 1 linear;
+  -webkit-animation: front-border-shadow 5s 1 linear;
+  -o-animation: front-border-shadow 5s 1 linear;
+  animation: front-border-shadow 5s 1 linear;
 }
 .icons {
   display: block;

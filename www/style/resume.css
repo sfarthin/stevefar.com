@@ -3230,7 +3230,8 @@ li strong {
 }
 .contact a {
   display: block;
-  margin: 10px 3px;
+  color: #91170a;
+  text-decoration: underline;
 }
 .contact a:hover {
   text-decoration: none;
@@ -3274,8 +3275,41 @@ h3 {
     -webkit-print-color-adjust: exact;
   }
 }
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    margin: 1.6cm;
+  }
+}
 .experience article:last-child p {
   /*	margin-bottom: 3px;*/
+}
+.experience h3 {
+  display: flex;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 3px;
+  align-items: flex-end;
+}
+.experience h3 span:first-child {
+  padding-right: 10px;
+  font-size: 20px;
+}
+.experience h3 span:first-child::after {
+  padding-left: 10px;
+  color: #aaa;
+  content: "|";
+}
+.experience h3 span:nth-child(2) {
+  color: black;
+  font-weight: 400;
+}
+.experience h3 span:last-child {
+  flex: 1;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: right;
 }
 .education article p:nth-child(2) {
   margin-bottom: 0px;
