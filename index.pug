@@ -1,0 +1,95 @@
+doctype html
+html(lang="en")
+	head
+		title Steve Farthing
+		meta(name="viewport",content="width=device-width; initial-scale=1.0")
+		link(href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap",rel="stylesheet")
+		link(rel="apple-touch-icon",sizes="57x57",href="/apple-touch-icon-57x57.png")
+		link(rel="apple-touch-icon",sizes="114x114",href="/apple-touch-icon-114x114.png")
+		link(rel="apple-touch-icon",sizes="72x72",href="/apple-touch-icon-72x72.png")
+		link(rel="apple-touch-icon",sizes="144x144",href="/apple-touch-icon-144x144.png")
+		link(rel="apple-touch-icon",sizes="60x60",href="/apple-touch-icon-60x60.png")
+		link(rel="apple-touch-icon",sizes="120x120",href="/apple-touch-icon-120x120.png")
+		link(rel="apple-touch-icon",sizes="76x76",href="/apple-touch-icon-76x76.png")
+		link(rel="apple-touch-icon",sizes="152x152",href="/apple-touch-icon-152x152.png")
+		link(rel="icon",type="image/png",href="/favicon-196x196.png",sizes="196x196")
+		link(rel="icon",type="image/png",href="/favicon-160x160.png",sizes="160x160")
+		link(rel="icon",type="image/png",href="/favicon-96x96.png",sizes="96x96")
+		link(rel="icon",type="image/png",href="/favicon-16x16.png",sizes="16x16")
+		link(rel="icon",type="image/png",href="/favicon-32x32.png",sizes="32x32")
+		meta(name="msapplication-TileColor",content="#000000")
+		meta(name="msapplication-TileImage",content="/mstile-144x144.png")
+		style
+			include ./node_modules/minireset.css/minireset.min.css
+			include:clean-css:stylus ./index.styl
+			include:clean-css:stylus ./resume.styl
+	body
+		.fixedBackground
+			.cubeWrapper
+				#cube
+					.front
+						.edge
+						include:svgo ./www/img/logo.svg
+					.back
+						.edge
+						include:svgo ./www/img/machineLearning.svg
+					.top
+						.edge
+						include:svgo ./www/img/fullStack.svg
+					.bottom 
+						.edge
+						include:svgo ./www/img/softArch.svg
+					.left
+						.edge
+					.right
+						.edge
+			.cubeShadow
+			.downArrow
+		.resume
+			include ./resume.pug
+		.icons 
+			a(href="http://www.linkedin.com/in/stevefarthing",target="_blank",title="LinkedIn")
+				include:svgo ./www/img/linkedIn.svg
+			a(href="https://github.com/sfarthin",target="_blank",title="Github Profile")
+				include:svgo ./www/img/github.svg
+			a(href="https://twitter.com/stevefarthing",target="_blank",title="Twitter")
+				include:svgo ./www/img/twitter.svg
+			a(href="mailto:me@stevefar.com",title="Email")
+				include:svgo ./www/img/email.svg
+
+	script
+		:uglify-js
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-4237287-8', 'auto');
+			ga('send', 'pageview');
+
+			var timeout;
+			var cube = document.getElementById('cube');
+
+			function flip () {
+				const isFirstTime = cube.classList.value === "";
+
+				if(isFirstTime) {
+					cube.classList.value = "position0";
+					timeout = setTimeout(flip, 3000);
+					return;
+				}
+
+				const position = Number(cube.classList.value.replace(/position/gi, ''));
+				const newPosition = (position + 1) % 4;
+				cube.classList.value = "position" + newPosition;
+
+				clearTimeout(timeout);
+				// After one time through, stop
+				if(position !== 2) {
+					timeout = setTimeout(flip, 3000);
+				}
+				
+			}
+
+			timeout = setTimeout(flip, 5000);
+			cube.addEventListener('click', flip);

@@ -1,0 +1,103 @@
+*
+    // https://css-tricks.com/almanac/properties/c/color-adjust/
+    color-adjust: exact;
+
+.page 
+    padding: 0.25in 0.3in;
+    font-size: 12px
+    line-height: 16px
+
+@media only print
+    .page 
+        width: 8.5in
+        height: 11in
+        // So it doesn't force to the next page
+        padding-bottom: 0px;
+        
+
+@media only screen
+    .page
+        margin: 0px auto 40px
+        background: white 
+        border-radius: 2px
+        box-shadow: 5px 5px 5px 0px #777777
+        border: 1px solid #eee
+        max-width: 8.5in
+        min-height: 11in
+        color: #333
+
+
+.page
+    p
+        padding: 10px 0 0
+    .logo
+        background: white
+        width: 2.5in
+    
+    ul.roles
+        li 
+            display: inline-block
+            font-size: 20px
+            line-height 24px
+            &::after
+                content: '●'
+                padding: 0 5px
+            &:last-child::after
+                content: ''
+    ul.contact 
+        padding-bottom: 10px
+        li 
+            display: inline-block
+            &::after
+                content: '●'
+                padding: 0 5px
+            &:last-child::after
+                content: ''
+    
+    h2 
+        font-weight: bold 
+        font-size: 14px
+        letter-spacing: 0.5px
+        border-bottom: 1px solid black
+        padding: 20px 0 1px 0
+        margin-bottom: 9px
+        text-transform uppercase
+    
+    h3
+        font-weight: bold
+    
+    .time 
+        float: right
+    
+    .company
+        padding-top: 0px
+        span:first-child::after
+            content: '| '
+        .location
+            font-style italic
+    
+    ul.keyAccomplishments
+        padding-top: 3px
+        padding-bottom: 20px
+        &::before
+            content: 'Key Accomplishments:'
+            text-decoration: underline
+            padding-left: 10px
+        li 
+            padding: 3px 0 3px 5px
+            margin-left: 30px;
+            list-style-type: square
+    
+    .education
+        padding-top: 3px
+    
+    ul.skills
+        li
+            display: inline-block
+            &::after
+                display: inline-block
+                padding: 0 5px
+                content: '|'
+            &:last-child::after
+                padding: 0px 
+                content: ''

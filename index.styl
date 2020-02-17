@@ -1,0 +1,191 @@
+cubeWidth = 320px
+cubeHeight = 150px
+halfCubeHeight = (cubeHeight / 2)
+
+@keyframes cube
+    0%
+        transition-timing-function: cubic-bezier(1,0,1,0)
+        transform: rotateX(-90deg) translate3d(0, 0px, -1400px) scale(0.3)
+    25%
+        transition-timing-function: cubic-bezier(0,1,0,1)
+        transform: rotateX(-180deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 300px) scale(0.9)
+    50%
+        transform: rotateX(-270deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, -20px)
+    80%
+        transform: rotateX(-360deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 100px)
+    85%
+        transform: rotateX(-360deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px)
+    100%
+        transform: rotateX(-360deg) rotateY(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px)
+
+@keyframes cubeShadow
+    0%
+        width: 3400px;
+    25%
+        // + 1700
+        width: 600px;
+    50%
+        // - 280
+        width: 1000px;
+    70%
+        // + 80
+        width: 800px;
+    80%
+        width: 600px;
+    85%
+        width: 600px;
+        
+    100%
+        width: 600px;
+
+body
+    font-family: 'Roboto', sans-serif;
+
+// http://davidwalsh.name/css-cube
+.fixedBackground
+
+    background: linear-gradient(90deg, rgba(150,250,250,0.2) 0%, rgba(250,250,250,1) 30%, rgba(250,250,250,1) 60%, rgba(150,150,250,0.2) 100%);
+
+    position: fixed
+    height: 100vh
+    width: 100vw
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+
+    .cubeShadow
+        z-index: -1
+        margin-top: -30px
+        animation: cubeShadow 2s 1 linear
+        background: radial-gradient(#999, transparent 50%);
+        height: 100px;
+        width: 600px;
+        filter: blur(1px);
+        transform: rotateX(20deg);
+
+    .cubeWrapper
+        z-index: 9
+        width: 323px
+        height: 124px
+        transition: transform 0.5s;
+        transform: translate(0px, 0px)
+
+        &:active
+            transform: translate(0px, -100px)
+
+        #cube
+            position: relative
+            margin-left: -75px
+            width: cubeWidth
+            transform-style: preserve-3d
+            animation: cube 2s 1 linear
+            top: (cubeHeight/2)
+            margin: 0px
+            cursor: pointer
+            transition: transform 0.5s;
+            svg 
+                background: white
+
+            // See Javascript, clicking the logo makes it spin.
+            &.position3
+                transform: rotateX(-360deg);
+            &.position2
+                transform: rotateX(-270deg);
+            &.position1
+                transform: rotateX(-180deg);
+            &.position0
+                transform: rotateX(-90deg);
+
+            > div
+                position: absolute
+                width: 323px;
+                height: 124px;
+                
+                background: black
+                // background: white
+
+                // We need the overlay over the SVG so we create this extra div
+                .edge {
+                    position: absolute
+                    left: 0
+                    right: 0
+                    top: 0
+                    bottom: 0
+                    box-shadow: inset 0 0 10px rgba(125, 125, 125, 0.8)
+                    background: transparent
+                }
+
+                &.right, 
+                &.left
+                    width: 123px;
+                    height: 123px;
+
+                &.back
+                    transform: translateZ(-62px) rotateX(180deg) translateY(62px)
+
+                &.right
+                    transform: rotateY(-270deg) translateY(-62px) translateX(-62px) translateZ(320px)
+                    transform-origin: center left
+
+                &.left
+                    transform: rotateY(270deg) translateY(-62px) translateX(-62px)
+                    transform-origin: center left
+
+                &.top
+                    transform: rotateX(90deg) translateY(-62px) translateZ(62px)
+                    transform-origin: top center
+
+                &.bottom
+                    transform: rotateX(270deg) translateY(62px) translateZ(-62px)
+                    transform-origin: bottom center
+
+                &.front
+                    transform: translateZ(62px) translateY(-62px)
+
+    .downArrow
+        border: solid black;
+        border-width: 0 3px 3px 0
+        display: inline-block
+        padding: 3px
+        transform: rotate(45deg);
+        position: absolute 
+        bottom: 5%
+
+.resume
+    position: relative
+    // height: 1000px
+    // width: 100%;
+    top: 100vh
+
+.icons
+    position: relative
+    top: 100vh
+    margin: 40px auto 80px
+    max-width: 500px
+    display: flex
+    justify-content: space-around
+    > a
+        display: block
+        // overflow: hidden
+        svg
+            width: 48px
+            height: 48px
+            background: white
+            border-radius: 5px
+            transition: transform 0.2s
+            &:hover {
+                transform: scale(1.2)
+            }
+
+// Lets not print the intro or fixed background. 
+@media print
+    .fixedBackground
+        display: none
+    .icons
+        display: none
+    .resume
+        top: 0
+    @page
+        margin: 0

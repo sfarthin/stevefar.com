@@ -4,8 +4,6 @@ This repository holds all the code used to produce this website (SteveFar.com). 
 
 ### File/Directory Explanations
 
-**bower_components**: Installed bower libraries such as Bootstrap and LessHat
-
 **style**: All the LESS files. Gulp compiles these LESS files and places them in the www directory
 
 **www**: Holds all the static assests as well as built assests such as LESS and jade
